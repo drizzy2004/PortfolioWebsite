@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "interact.js"> </script>
+    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+
+    <div class="container">
+    <nav> 
+        <h1 class = "logo"> DA </h1>
+        <ul id = "sidemenu"> 
+            <li> <a href = "#header"> Home </a></li>
+            <li> <a href = "#about"> About </a></li>
+            <li> <a href = "#services"> Services </a></li>
+            <li> <a href = "#portfolio"> Portfolio </a></li>
+            <li> <a href = "#contact"> Contact </a></li>
+            <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
+        </ul>
+        <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
+    </nav>
+        <div class="header-text">
+
+            <!-- <p> Software Developer </p> -->
+            <h1> Hi, I'm <span>Drake</span> <br> <span>AuClaire</span> from Utah </h1>
+
+        </div>
+    </div>
+</div>
+<!-- --------------------- about --------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src = "Images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title"> About Me</h1>
+                <p> 
+                    I am currently a full-time student at Westminster University studying Computer Science.
+                    I enjoy snowboarding at Brighton, playing basketball with highschool friends, and hiking with
+                    my family and girlfriend. My ultimate goal is to acquire as much experience and knwoledge before 
+                    graduating so that my transition into the workforce is as smooth as possible. I am excited to learn more 
+                    about different languages, what working with a team of developers looks like, and what else this field 
+                    has to offer.        
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')"> Qualities </p>
+                    <p class = "tab-links" onclick = "opentab('experience')"> Experience </p>
+                    <p class = "tab-links" onclick = "opentab('education')"> Education </p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul> 
+                        <li> <span> Dedicated/Consistent </span><br> Over the years I have been exposed to multiple languages including: 
+                        Java, HTML, CSS, JavaScript, C, and a little Python. </li>
+                        <li> <span> Analytical Problem-Solver </span><br> I have worked on a building a few websites/aplications using HTML, 
+                        CSS, and JavaScript. I am currently working on a spelling software for younger kids using DJANGO. 
+                        </li>
+                        <li> <span> Inquisitive </span><br> I took a Databases class and got very comfortable with 
+                        using MySQL to query databases and to help create console apps. 
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul> 
+                        <li> <span> Projects </span><br> I have worked on multiple projects at school so far. I have 
+                        worked with data pixel manipulation in C, wrote an app from scratch using java and MySQL, and created
+                        multiple little games using python. 
+                        </li>
+                        <li> <span> Free Time </span><br> During my free time I like to educate myself and practice 
+                        languages by developing little games or websites. 
+                        </li>
+                        <li> <span> Internship </span><br> I will hopefully land an intership in the summer of 2024 </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul> 
+                        <li> <span> Highschool </span><br> I graduated from Murray Highschool in 2022</li>
+                        <li> <span> Westminster University </span><br> I am a junior at Westminster University studying CS  </li>
+                        <li> <span> Degree</span><br> I plan on getting my Bachelor's degree in CS </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------- services --------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title"> My Services </h1>
+        <div class="services-list">
+
+            <div> 
+                <i class="fa-brands fa-java"></i>
+                <h2> Backend Development</h2>
+                <p> Some backend languages I am familiar with include: JavaScript, Java, Python, SQL, and C. I've used these 
+                    to build projects displayed in the next section. </p>
+                <a href = "#"> Learn more </a>
+            </div>
+
+            <div> 
+                <i class="fa-brands fa-html5"></i>
+                <h2> Frontend Development </h2>
+                <p> Frontend languages I am familiar with include HTML and CSS, as well as JavaScript. I have experience working with 
+                    designers; creating websites and web apps for a client. </p>
+                <a href = "#"> Learn more </a>
+            </div>
+
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2> FullStack </h2>
+                <p> I am willing to work on fullstack projects to develop my skills. </p>
+                <a href = "#"> Learn more </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ----------------- portfolio ----------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title"> My Projects </h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src = "Images/sneaker2.jpeg"> 
+                <div class="layer">
+                    <h3> Console Sneaker App </h3>
+                    <p> Built a console app immitating the functionality of a sneaker app. 
+                        We used Java for the application's backend logic and MySQL for database maintenance.
+                    </p>
+                    <a href = "sneaker.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src = "Images/bitmap2.jpeg"> 
+                <div class="layer">
+                    <h3> Bitmap Pixel Manipulation </h3>
+                    <p> Learned a good amount of Java in my Computer Systems class.
+                        We played around with terminal and built a few projects using java.
+                    </p>
+                    <a href = "bitmap.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src = "Images/asteroids.jpeg"> 
+                <div class="layer">
+                    <h3> Asteroids </h3>
+                    <p> Learned a good amount of C in my Computer Systems class.
+                        We played around with terminal and built a few projects using SQL and MariaDB.
+                    </p>
+                    <a href = "asteroids.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <a href = "extraProjects.html" class = "btn"> See more </a>
+    </div>
+</div>
+
+<!-- ---------------- contact ------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> drake.auclaire2004@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 801-706-3436</p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/dra_004/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = "https://www.facebook.com/drake.auclaire.94"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = "https://www.linkedin.com/in/drake-auclaire-169222298/"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume.pdf" download class = "btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right"> 
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type="email" name="Email" placeholder=" Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2"> Submit</button>
+                </form>
+                <span id = "msg"> </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright <i class="fa-regular fa-copyright"></i> Drake AuClaire | 2024 </p>
+    </div>
+
+</div>
+
+
+<script> 
+
+var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        
+        sidemenu.style.right = "0";
+
+    }
+
+    function closemenu() {
+        
+        sidemenu.style.right = "-200px";
+
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysfHpqYgkVBzHxkXC7hJWh3Un6ZsUuePEzmEC09fYDSvsmBXGMmByW9EN6wTtz2AE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ 
+</body>
+</html>
