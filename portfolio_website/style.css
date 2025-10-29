@@ -399,6 +399,10 @@ nav .fa-regular {
         background-image: url(Images/phoneImage.jpeg);
     }
 
+    .logo {
+        display: none;
+    }
+
     .header-text {
         margin-top: 100%;
         font-size: 16px;
