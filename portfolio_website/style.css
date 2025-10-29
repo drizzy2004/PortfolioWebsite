@@ -238,6 +238,10 @@ nav ul li a:hover::after {
 .work img {
     width: 100%;
     border-radius: 10px;
+
+    height: 600px; /* <-- Adjust this value to be shorter */
+    object-fit: cover;
+
     display: block;
     transition: transform 0.5s;
 }
