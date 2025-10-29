@@ -13,7 +13,6 @@ html {
 body {
     background: #080808;
     color: #fff;
-
 }
 
 #header {
@@ -25,9 +24,7 @@ body {
 }
 
 .container {
-
     padding: 10px 10%;
-
 }
 
 nav {
@@ -38,8 +35,9 @@ nav {
 }
 
 .logo {
-    width: 100px;
+    width: 140px;
     height: auto;
+    margin: 0px 0px 0px -120px;
 }
 
 nav ul li {
