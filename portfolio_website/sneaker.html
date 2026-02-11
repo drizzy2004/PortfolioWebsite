@@ -3,50 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker App Information </title>
-    <link rel = "stylesheet" href = "sneakerStyle.css">
-    <script src = "interact.js"> </script>
-    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+    <title>Console Sneaker App | Drake AuClaire</title>
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
+    <main class="page">
+        <header class="page-header">
+            <a class="back-link" href="index.html">Back to Portfolio</a>
+        </header>
 
-    <div id="services">
-        <div class="container">
-            <h1 class = "sub-title"> Console Sneaker App </h1>
+        <section class="project-hero">
+            <p class="project-kicker">Project Case Study</p>
+            <h1 class="project-title">Console Sneaker App</h1>
+            <p class="project-lede">
+                A Java-based console app that simulates sneaker marketplace workflows with persistent MySQL data,
+                secure connectivity, and practical backend logic.
+            </p>
+            <ul class="meta-list">
+                <li>Role: Developer</li>
+                <li>Type: Partner Project</li>
+                <li>Stack: Java, MySQL, MariaDB, Eclipse</li>
+                <li>Duration: ~3 Weeks</li>
+            </ul>
+        </section>
 
-            <div class = "img">
-                <img src = "Images/app.png" width = "500px" height = "350px" class = "img1">
-                <img src = "Images/eclipse.jpeg" width = "500px" height = "350px" class = "img2">
+        <section class="project-layout">
+            <div>
+                <article class="panel">
+                    <h2 class="panel-title">Screenshots</h2>
+                    <div class="image-grid">
+                        <img src="Images/app.png" alt="Sneaker app screenshot">
+                        <img src="Images/eclipse.jpeg" alt="Eclipse development screenshot">
+                    </div>
+                </article>
+
+                <section class="details-grid">
+                    <article class="card">
+                        <h2>Overview</h2>
+                        <p>
+                            We modeled core sneaker app behaviors in a CLI environment, including product querying,
+                            data persistence, and user-flow logic tied to real database records.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Collaboration</h2>
+                        <p>
+                            Built with paired programming, which improved implementation quality through shared problem solving,
+                            faster debugging, and consistent architecture decisions.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Execution Timeline</h2>
+                        <p>
+                            Week one focused on infrastructure setup and secure DB access. Weeks two and three focused on
+                            query logic, behavior validation, and final refinement.
+                        </p>
+                    </article>
+                </section>
             </div>
 
-            <div class="services-list">
-                <div> 
-                    <h2> Details </h2>
-                    <p> In order to develop the sneaker app, it was imperative to establish connectivity with the MariaDB database 
-                        via an SSH tunnel. Once this connection was established, we proceeded to craft queries utilizing MySQL and 
-                        completed the backend logic using Java. Eclipse served as our chosen framework for development, while MySQL 
-                        Workbench facilitated database management. </p>
+            <aside class="panel sidebar-stack">
+                <div class="sidebar-item">
+                    <h3>Primary Goal</h3>
+                    <p>Implement reliable backend logic around a live relational data model.</p>
                 </div>
-    
-                <div> 
-                    <h2> Team Work </h2>
-                    <p> My project collaborator demonstrated exceptional dedication and contributed significantly to our joint efforts. 
-                        Working with Java proved to be particularly advantageous due to its versatility, allowing for the attainment of desired functionality 
-                        through various approaches. I found paired programming to be highly beneficial, as the collaborative nature ensured thoroughness 
-                        in our coding endeavors by leveraging the collective insight of two minds. 
-                    </p>
+                <div class="sidebar-item">
+                    <h3>Notable Challenge</h3>
+                    <p>Configuring SSH tunneling and DB access without firewall conflicts.</p>
                 </div>
-    
-                <div> 
-                    <h2> Time Frame </h2>
-                    <p> We had about 3 weeks to finsih this project. Took about 1 week to finish setting everything up
-                        including an ssh tunnel so that we could connect to the database without running into a firewall.
-                        Then the last 2 weeks working on queries and tightening everything up. </p>
+                <div class="sidebar-item">
+                    <h3>Key Outcome</h3>
+                    <p>Stronger confidence in SQL-backed app architecture and paired delivery.</p>
                 </div>
-    
-            </div>
-        </div>
-    </div>
-    
+            </aside>
+        </section>
+    </main>
 </body>
 </html>

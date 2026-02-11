@@ -3,49 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker App Information </title>
-    <link rel = "stylesheet" href = "bitmapStyle.css">
-    <script src = "interact.js"> </script>
-    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+    <title>Bitmap Pixel Manipulation | Drake AuClaire</title>
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
+    <main class="page">
+        <header class="page-header">
+            <a class="back-link" href="index.html">Back to Portfolio</a>
+        </header>
 
-    <div id="services">
-        <div class="container">
-            <h1 class = "sub-title"> Bitmap Pixel Manipulation </h1>
+        <section class="project-hero">
+            <p class="project-kicker">Project Case Study</p>
+            <h1 class="project-title">Bitmap Pixel Manipulation</h1>
+            <p class="project-lede">
+                A low-level image-processing project in Java focused on directly transforming bitmap data,
+                with attention to precision, repeatability, and algorithmic structure.
+            </p>
+            <ul class="meta-list">
+                <li>Role: Developer</li>
+                <li>Type: Systems Project</li>
+                <li>Stack: Java, Bitmap Processing</li>
+                <li>Duration: ~3 Weeks</li>
+            </ul>
+        </section>
 
-            <div class = "img">
-                <img src = "Images/halTest.bmp" width = "1000px" height = "350px" class = "img1">
+        <section class="project-layout">
+            <div>
+                <article class="panel">
+                    <h2 class="panel-title">Output Preview</h2>
+                    <div class="image-grid">
+                        <img class="single" src="Images/halTest.bmp" alt="Bitmap transformation output">
+                    </div>
+                </article>
+
+                <section class="details-grid">
+                    <article class="card">
+                        <h2>Overview</h2>
+                        <p>
+                            This work centered on reading and manipulating raw bitmap information to produce controlled
+                            visual effects while preserving output consistency.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Technical Approach</h2>
+                        <p>
+                            The implementation required careful ordering of operations and disciplined debugging,
+                            especially when handling binary format constraints and edge cases.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Execution Timeline</h2>
+                        <p>
+                            The build moved through setup, algorithm implementation, and tuning phases with
+                            progressive checkpoints to validate each transformation.
+                        </p>
+                    </article>
+                </section>
             </div>
 
-            <div class="services-list">
-                <div> 
-                    <h2> Details </h2>
-                    <p> In order to develop the sneaker app, it was imperative to establish connectivity with the MariaDB database 
-                        via an SSH tunnel. Once this connection was established, we proceeded to craft queries utilizing MySQL and 
-                        completed the backend logic using Java. Eclipse served as our chosen framework for development, while MySQL 
-                        Workbench facilitated database management. </p>
+            <aside class="panel sidebar-stack">
+                <div class="sidebar-item">
+                    <h3>Primary Goal</h3>
+                    <p>Develop direct, predictable pixel-level transformations.</p>
                 </div>
-    
-                <div> 
-                    <h2> Team Work </h2>
-                    <p> My project collaborator demonstrated exceptional dedication and contributed significantly to our joint efforts. 
-                        Working with Java proved to be particularly advantageous due to its versatility, allowing for the attainment of desired functionality 
-                        through various approaches. I found paired programming to be highly beneficial, as the collaborative nature ensured thoroughness 
-                        in our coding endeavors by leveraging the collective insight of two minds. 
-                    </p>
+                <div class="sidebar-item">
+                    <h3>Notable Challenge</h3>
+                    <p>Maintaining output correctness while changing low-level image data.</p>
                 </div>
-    
-                <div> 
-                    <h2> Time Frame </h2>
-                    <p> We had about 3 weeks to finsih this project. Took about 1 week to finish setting everything up
-                        including an ssh tunnel so that we could connect to the database without running into a firewall.
-                        Then the last 2 weeks working on queries and tightening everything up. </p>
+                <div class="sidebar-item">
+                    <h3>Key Outcome</h3>
+                    <p>Stronger systems-thinking skills and confidence in data-oriented debugging.</p>
                 </div>
-    
-            </div>
-        </div>
-    </div>
-    
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
