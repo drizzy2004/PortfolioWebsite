@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    width: min(1120px, 90vw);
+    width: min(1200px, 92vw);
     margin: 0 auto;
 }
 
@@ -507,6 +507,21 @@ form button:disabled {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        width: min(1400px, 93vw);
+    }
+
+    .row {
+        gap: 52px;
+    }
+
+    .work-list,
+    .services-list {
+        gap: 22px;
     }
 }
 

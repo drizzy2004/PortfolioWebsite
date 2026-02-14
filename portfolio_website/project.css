@@ -27,7 +27,7 @@ body {
 }
 
 .page {
-    width: min(1140px, 92vw);
+    width: min(1240px, 93vw);
     margin: 0 auto;
     padding: 34px 0 76px;
 }
@@ -220,6 +220,16 @@ body {
 .extra-project p {
     color: var(--muted);
     line-height: 1.7;
+}
+
+@media (min-width: 1500px) {
+    .page {
+        width: min(1440px, 94vw);
+    }
+
+    .project-layout {
+        gap: 22px;
+    }
 }
 
 @media (max-width: 900px) {
